@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+    font-family: 'Tahoma', Arial, sans-serif;
+    line-height: 1.6;
+    direction: rtl;
+    text-align: right;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    .poet-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+/* بطاقة الشاعر */
+.poet-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.poet-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.poet-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* لوحة التحكم */
+.admin-panel {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.sidebar a {
+    color: rgba(255,255,255,.8);
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: white;
+    background-color: rgba(255,255,255,.1);
+}
+
+.main-content {
+    padding: 20px;
+}
